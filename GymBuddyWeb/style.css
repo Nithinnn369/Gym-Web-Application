@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Mukta:wght@500&family=Noto+Sans:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  font-family: "Lato", sans-serif;
+}
+.container {
+  background-size: cover;
+}
+header a {
+  text-decoration: none;
+  
+}
+header {
+  width: 100vw;
+  /* padding: 0 20px; */
+  background-color: #ba7ee3;
+  height: 70px;
+  display: flex;
+
+  justify-content: space-between;
+}
+.gymLogo {
+  width: 120px;
+  height: 100px;
+}
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+ul a {
+  color: white;
+}
+ul li {
+  padding: 5px;
+  margin-left: 21px;
+}
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+/* #login,
+#signup {
+  border-radius: 5px;
+  padding: 5px 8px;
+} */
+#login {
+  border: 1px solid white;
+}
+#signup {
+  border: 1px solid white;
+}
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar2 {
+  opacity: 0;
+}
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  height: calc(100vh - 70px);
+  width: 100%;
+  height: 30%;
+  background-color: rgb(173, 112, 201);
+}
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+.header-image {
+  width: 100vw;
+}
+.section-container {
+  display: flex;
+}
+
+.main-heading {
+  text-align: center;
+  /* margin-top: 30px; */
+}
+.heading1 {
+  font-size: 5vw;
+  font-weight: bold;
+  margin-top: 100px;
+}
+.heading1 span {
+  font-size: 6vw;
+  font-weight: bold;
+  color: #ba7ee3;
+}
+.heading2 {
+  font-size: 5vw;
+  font-weight: bold;
+}
+.heading2 span {
+  font-size: 6vw;
+  font-weight: bold;
+  color: #ba7ee3;
+}
+.description1 {
+  font-size: 1.4vw;
+  margin: 10px 30px;
+}
+.joinButton {
+  width: 100px;
+  height: 40px;
+  margin: 15px 0;
+  background-color: #ba7ee3;
+  color: white;
+  font-size: 15px;
+  border: 0;
+  border-radius: 4px;
+}
+.joinButton:hover {
+  background-color: #903aca;
+}
+.hrline {
+  width: 100vw;
+  color: rgb(215, 234, 234);
+}
+.training-container {
+  display: flex;
+}
+.training-img {
+  width: 40%;
+}
+.training-content {
+  width: 60%;
+  margin: 10px;
+  align-items: center;
+}
+.training-image {
+  width: 70%;
+  justify-content: center;
+  margin: 20px 50px;
+  padding-left: 10vw;
+}
+.gym-icon1 {
+  width: 7vw;
+  margin: 10px;
+}
+.icon-head-disc {
+  display: flex;
+}
+.icon-heading {
+  margin: 10px;
+  font-size: 3vw;
+  font-weight: bold;
+  color: #ba7ee3;
+}
+.training-disc {
+  font-size: 1.3vw;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.icon1 {
+  justify-content: center;
+}
+
+.pricing-sec{
+	padding: 2rem 0;
+	background: white;
+}
+.section-title{
+	text-align: center;
+	color: #ca41dc;
+	font-size: 40px;
+}
+.pricing-row{
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+	padding: 2rem 0;
+	margin-top: 2rem;
+}
+.price-card{
+	padding: 1rem;
+	width: 300px;
+	height: 350px;
+	border-radius: 20px;
+	box-shadow: 0 0 20px #000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 4px solid rgb(190, 117, 210);
+	position: relative;
+	transition: .2s ease-in-out;
+  margin-bottom: 30px;
+}
+.price-card:hover{
+	transform: scale(1.1);
+}
+.price-card:before{
+	content: "";
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: -1.5rem;
+	left: -1.5rem;
+	border: 3px solid transparent;
+	border-radius: 20px;
+	border-top-color: rgb(189, 103, 179);
+	border-left-color: rgb(189, 103, 179);
+}
+.price-card:after{
+	content: "";
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	bottom: -1.5rem;
+	right: -1.5rem;
+	border: 3px solid transparent;
+	border-radius: 20px;
+	border-bottom-color: rgb(189, 103, 179);
+	border-right-color: rgb(189, 103, 179);
+}
+.price-card h4{
+	color: #e720bc;
+	font-size: 40px;
+}
+.price-title{
+	color: rgb(147, 2, 147);
+	margin-top: 1rem;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+.workout-types {
+  display: flex;
+  flex-direction: column;
+}
+.price-card ul li{
+	margin-top: .5rem;
+	color: #bd4298;
+}
+.price-card a{
+	padding: .8rem 1.5rem;
+	margin-top: 1rem;
+	background: rgb(230, 69, 173);
+	border: 2px solid rgb(230, 7, 159);
+	transition: .2s ease-in-out;
+  text-decoration: none;
+  color: #040605;
+  font-weight: bold;
+}
+.price-card a:hover{
+	background: transparent;
+}
+.about-us {
+  display: flex;
+  margin: 4vw;
+}
+.about-discription {
+  width: 60%;
+}
+.about-heading {
+  font-size: 4vw;
+  font-weight: bold;
+  color: rgba(139, 6, 201, 0.543);
+}
+.about-para {
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: rgba(38, 38, 39, 0.543);
+  margin-top: 20px;
+}
+.about-image {
+  width: 40%;
+}
+.about-img {
+  width: 80%;
+  border-radius: 2px;
+}
+
+
+footer {
+  background-color: #eba9e1;
+  color: #b21ea8;
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.footer-section {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.footer-section h2 {
+  color: #b540cf;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    flex: 100%;
+  }
+}
+
+
+
+
+@media (max-width: 600px) {
+
+  header {
+    width: 100%;
+  }
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+    /* margin-right: 17px; */
+    /* padding-right: 17px; */
+  }
+  .section-container {
+    flex-direction: column-reverse;
+  }
+  
+  .firstImage {
+    width: 100vw;
+    /* margin: -20px; */
+  }
+  .heading1 {
+    margin-top: 10px;
+  }
+  .description1 {
+    font-size: 2.2vw;
+    margin: 10px 30px;
+  }
+
+  .training-container {
+    flex-direction: column;
+  }
+  .training-img {
+    width: 75%;
+    margin: 2vw 4vw;
+    align-items: center;
+  }
+  .training-content {
+    width: 100%;
+    margin: 3vw 10vw;
+    align-items: center;
+  }
+  .training-img {
+    justify-content: center;
+  }
+  .training-image {
+    width: 100%;
+  }
+  .pricing-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-us {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .about-discription {
+    width: 100%;
+  }
+  .about-image {
+    width: 100%;
+    align-items: center;
+  }
+  .about-img {
+    width: 100vw;
+    justify-content: center;
+  }
+  .about-heading {
+    font-size: 9vw;
+    font-weight: bold;
+    color: rgba(139, 6, 201, 0.543);
+    margin-top: 10px;
+  }
+  .about-para {
+    font-size: 2.3vw;
+    font-weight: 500;
+    color: rgba(38, 38, 39, 0.543);
+  }
+  .footer-content {
+    margin: 10px 30px;
+  }
+}
